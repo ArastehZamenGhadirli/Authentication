@@ -1,0 +1,53 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="LanguageDetectionInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="asgiref" />
+          <option value="certifi" />
+          <option value="cfgv" />
+          <option value="charset-normalizer" />
+          <option value="distlib" />
+          <option value="Django" />
+          <option value="django-environ" />
+          <option value="django-prometheus" />
+          <option value="djangorestframework" />
+          <option value="djangorestframework-simplejwt" />
+          <option value="drf-spectacular" />
+          <option value="factory-boy" />
+          <option value="Faker" />
+          <option value="filelock" />
+          <option value="gunicorn" />
+          <option value="identify" />
+          <option value="idna" />
+          <option value="nodeenv" />
+          <option value="packaging" />
+          <option value="platformdirs" />
+          <option value="pre_commit" />
+          <option value="prometheus_client" />
+          <option value="psycopg2-binary" />
+          <option value="python-discovery" />
+          <option value="python-dotenv" />
+          <option value="pytz" />
+          <option value="requests" />
+          <option value="rpds-py" />
+          <option value="sentry-sdk" />
+          <option value="typing_extensions" />
+          <option value="virtualenv" />
+          <option value="whitenoise" />
+          <option value="ccxt" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyStubPackagesAdvertiser" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="djangorestframework" />
+          <option value="pandas" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

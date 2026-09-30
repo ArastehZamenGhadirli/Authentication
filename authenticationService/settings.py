@@ -11,9 +11,11 @@ https://docs.djangoproject.com/en/6.1/ref/settings/
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / ".env")
 
 
 # Quick-start development settings - unsuitable for production
@@ -162,7 +164,7 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
     'ROTATE_REFRESH_TOKENS': True,
-    'SIGNING_KEY': os.environ.get('JWT_SIGNING_KEY', SECRET_KEY),
+    'SIGNING_KEY': os.environ.get('JWT_SIGNING_KEY'),
     'BLACKLIST_AFTER_ROTATION': False,  # برای Stateless خالص، blacklist نمی‌خواهیم
     'AUTH_HEADER_TYPES': ('Bearer',),
     'USER_ID_FIELD': 'id',
@@ -178,5 +180,5 @@ SPECTACULAR_SETTINGS = {
 
 import os
 
-X_SERVICE_TOKEN = os.environ.get("X_SERVICE_TOKEN", "fallback-dev-token")
+X_SERVICE_TOKEN = os.environ["X_SERVICE_TOKEN"]
 
